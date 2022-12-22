@@ -21,7 +21,7 @@ internal class Program
         foreach (Task t in tasks)
         {
             t.Start();
-            //t.Wait();
+            //t.Wait(); //等待完成才繼續下一個 Task => 可測試單執行緒狀況
         }
 
         // wait for all finish
